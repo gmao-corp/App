@@ -1,59 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gerenciador de Treino - GMAO Corp</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/Imagens/favicon.ico">
-    <link rel="stylesheet" href="/css/styke.css">
-    <title>G.M.A.O. Training-Login</title>
-</head>
-
-<body>
-    <div class="container">
-
-        <div class="container-longin">
-            <div class="wrap-login">
-                <form class="login-form">
-                    <span class="login-form-title">
-                        <img src="/Imagens/G.M.A.O.png" alt="img-not-found">
-                    </span>
-
-                    <div class="wrap-input margin-top-35 margin-bottom-35">
-                        <input class="input-form" type="email" name="email">
-                        <span class="focus-input-form" data-placeholder="E-mail"></span>
-                    </div>
-
-                    <div class="wrap-input margin-bottom-35">
-                        <input class="input-form" type="password" name="password">
-                        <span class="focus-input-form" data-placeholder="Senha"></span>
-                    </div>
-
-                    <div class="container-login-form-btn">
-                        <button class="longin-form-btn">Login</button>
-                    </div>
-                    <ul class="login-utils">
-                        <li class="margin-top-8 margin-bottom-8">
-                            <span class="text1">
-                                Esqueceu sua
-                            </span>
-                            <a class="text2" href="#">senha</a> ?
-                        </li>
-                        <li>
-                            <span class="text1">
-                                Não possui conta ?
-                            </span>
-                            <a class="text2" href="#">Criar perfil</a>
-                        </li>
-                    </ul>
-                </form>
-            </div>
+  <body>
+    <header></header>
+    <form>
+        <div class="imgLogo">
+          <img src="/assets/img/G.M.A.O.png" alt="logo" class="logo">
         </div>
-
-
-
-    </div>
-</body>
-
+      
+        <div class="container">
+          <label for="email" class="text"><b>E-mail</b></label>
+          <br>
+          <input type="text" placeholder="email@email.com" id="email" class="entrada email" required>
+      <br>
+          <label for="senha" class="text"><b>Senha</b></label>
+          <br>
+          <input type="password" placeholder="Digite sua senha" id="senha" class="entrada senha" required>
+              
+          <div class="box-1">
+            <div class="btn btn-one">
+              <span>Login</span>
+            </div>
+          </div>
+          <label>
+            <br>
+            <input type="checkbox" checked="checked" id="remember"> Salvar e-mail? 
+          </label>
+        </div>
+      </form>
+    <footer>G.M.A.O. Corp - Gerenciador de Treinos</footer>
+  </body>
 </html>

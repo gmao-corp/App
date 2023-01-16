@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Declaração do favicon -->
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Declaração das folhas de CSS -->
     <link rel="stylesheet" href="assets/css/login.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Declaração das fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
       rel="stylesheet"
     />
+    <!-- Importação da biblioteca de ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Gerenciador de Treino - GMAO Corp</title>
   </head>
 
   <body>
     <header></header>
-    <form>
+    <form action="/menu.html">
         <div class="imgLogo">
-          <img src="/assets/img/G.M.A.O.png" alt="logo" class="logo">
+          <img src="/assets/img/gmao-training-br.png" alt="logo" class="logo">
         </div>
       
         <div class="container">
@@ -30,19 +37,19 @@
       <br>
           <label for="senha" class="text"><b>Senha</b></label>
           <br>
-          <input type="password" placeholder="Digite sua senha" id="senha" class="entrada senha" required>
-              
-          <div class="box-1">
-            <div class="btn btn-one">
-              <span>Login</span>
-            </div>
+          <input type="password" placeholder="Digite sua senha" id="senha" class="entrada senha" required> 
+            <div class="btn-one">
+              <button type="submit">Login</button>
+            </div> 
+            <div class="menu-provisorio"> 
+            <a href="/menu.html" class="lista-menu-provisorio">Menu</a>       
           </div>
-          <label>
+            <label>
             <br>
             <input type="checkbox" checked="checked" id="remember"> Salvar e-mail? 
           </label>
         </div>
       </form>
-    <footer>G.M.A.O. Corp - Gerenciador de Treinos</footer>
+    <footer><b>G.M.A.O. Corp</b> - Gerenciador de Treinos</footer>
   </body>
 </html>

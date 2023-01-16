@@ -8,6 +8,10 @@
   font-weight: 400;
 }
 
+body {
+  background-color: #282828;
+}
+
 header {
   background-color: #ebb700;
   top: 0;
@@ -28,6 +32,7 @@ footer {
   text-align: center;
   line-height: 2.5rem;
   position: fixed;
+  font-size: smaller;
 }
 
 /* #EBB700 

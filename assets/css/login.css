@@ -1,4 +1,3 @@
-
 /* #EBB700 
      #09CB1D
      #36C8E8
@@ -12,58 +11,107 @@
 body {
   color: #fff;
   min-height: 100%;
-  text-align: center;
-  align-content: center;
- 
+  
+  position: relative;
 }
 
 
 
 form {
-  border: 3px solid #f1f1f1;
+  border: px solid;
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
-  margin-bottom: -2000px;
+
+align-items: center;
+
+}
+
+input[type=text],
+input[type=password] {
+  flex-direction: column;
+  width: 80%;
+  padding: 12px 20px;
+  margin-top: 12px 10px;
+  border: 0.5px solid #ccc;
+  border-radius: 15px;
+}
+.btn {
+	line-height: 50px;
+	height: 50px;
+	text-align: center;
+	width: 250px;
+	cursor: pointer;
+
   
 }
-
-input[type=text], input[type=password] {
-  flex-direction: column;
-  width: 50%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
+.btn-one {
+  
+	color: #ebb700;
+	transition: all 0.3s;
+	position: relative;
+  
+}
+.btn-one span {
+	transition: all 0.3s;
+}
+.btn-one::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+  border-radius: 15px;
+	border-style: solid;
+	border-color:#ebb700(235, 219, 3, 0.5);
+	transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+	letter-spacing: 2px;
+}
+.btn-one:hover::before {
+	opacity: 1;	
+	transform: scale(1, 1);	
+}
+.btn-one::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+	background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.btn-one:hover::after {
+	opacity: 0;	
+	transform: scale(0.1, 1);
 }
 
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
 
 .imgLogo {
-  text-align: center;
-  margin: 24px 0 12px 0
+  align-items: center;
+  margin-bottom: -100px;
 }
 
 .container {
-  padding: 50px;
-  box-sizing: border-box;
+ 
+  align-items: center;
+
 }
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.senha {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
+.entrada {
+  margin-bottom: 10px;
+
 }
 
+.text {
+  color: #ebb700;
+}

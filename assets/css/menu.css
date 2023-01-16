@@ -75,7 +75,7 @@ header {
   overflow: hidden;
 }
 
-header .logo2 {
+header .logo {
   float: center;
   text-align: center;
   height: 60px;
@@ -112,7 +112,7 @@ header .logo2 {
 }
 
 .menu .itens_menu {
-  display: none;
+  display: block;
 }
 
 .menu a {

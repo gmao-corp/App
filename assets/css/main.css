@@ -4,14 +4,16 @@
 * {
   margin: 0;
   padding: 0;
-  background: #282828;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
 
+body {
+  background-color: #282828;
+}
+
 header {
   background-color: #ebb700;
- 
   top: 0;
   color: #282828;
   width: 100%;
@@ -29,6 +31,8 @@ footer {
   width: 100%;
   text-align: center;
   line-height: 2.5rem;
+  position: fixed;
+  font-size: smaller;
 }
 
 /* #EBB700 

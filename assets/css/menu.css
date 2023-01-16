@@ -1,49 +1,131 @@
-.buttons {
-  max-width: 350px;
+/* #EBB700 
+     #09CB1D
+     #36C8E8
+     #C10E0E
+     #282828
+     #808080
+     #D9D9D9
+          */
+
+html {
+  height: 60%;
+}
+
+body {
+  position: relative;
+  text-align: center;
+  height: 100%;
+  background: #282828;
+}
+
+
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.botoes {
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Configuração dos botoões // */
+
+.botao {
+  width: 100px;
+  height: 100px;
+  border: none;
+  margin: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background-color: #d9d9d9;
+  font-weight: 600;
+  color: #282828;
+}
+.botao:hover {
+  background-color: #808080;
+  cursor: pointer;
+}
+.botao:active {
+  background-color: #808080;
+  transform: scale(1.03);
+}
+
+.btn-turmas:active {
+  color: #d9d9d9;
+}
+
+.btn-alunos:active {
+  color: #d9d9d9;
+}
+
+.btn-grupos:active {
+  color: #d9d9d9;
+}
+
+.btn-exercicios:active {
+  color: #d9d9d9;
+}
+
+header {
+  overflow: hidden;
+}
+
+header .logo2 {
+  float: center;
+  text-align: center;
+  height: 60px;
+}
+
+/* .menu {
+  overflow: hidden;
+  color: #d9d9d9;
+  display: flex;
+  float: right;
+  padding: 10px;
+} */
+
+.nome-usuario {
+  color: #d9d9d9;
+  font-weight: 200;
+  font-size: x-small;
+  padding: 19px 5px;
+}
+
+.menu a.icon {
+  right: 0;
+  top: 0;
+}
+
+.menu {
+  overflow: hidden;
+  position: relative;
+  height: auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: flex-end;
+
 }
 
-.button {
-  border: none;
-  text-align: center;
+.menu #myLinks {
+  display: none;
+}
+
+.menu a {
+  color: white;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 16px;
-  margin: 1rem;
-  cursor: pointer;
-  border-radius: 10%;
-  height: 150px;
-  width: 150px;
-  text-transform: uppercase;
+  font-size: 17px;
+  display: block;
 }
 
-.button:hover {
-    background-color: #808080;
-    color:white;
- }
 
-.turmas {
-  color: #282828;
-  background-color: #d9d9d9;
-  flex: 1;
 
-}
-
-.alunos {
-  color: #282828;
-  background-color: #d9d9d9;
-  flex: 1;
-}
-
-.grupos {
-  color: #282828;
-  background-color: #d9d9d9;
-  flex: 1;
-}
-
-.exercicios {
-  color: #282828;
-  background-color: #d9d9d9;
-  flex: 1;
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
 }
